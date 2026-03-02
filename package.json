@@ -1,0 +1,29 @@
+{
+  "name": "proofvault",
+  "version": "1.0.0",
+  "description": "ProofVault is a decentralized system that captures real-world sensor events and logs them immutably on-chain",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "keywords": ["blockchain", "iot", "sensors", "decentralized", "ethereum", "smart-contracts"],
+  "author": "Proofvault Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JobCharis/Proofvault.git"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "web3": "^4.2.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "eslint": "^8.47.0"
+  }
+}
