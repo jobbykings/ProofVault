@@ -21,7 +21,7 @@ ProofVault is a decentralized system that captures real-world sensor events — 
 
 - Node.js 16.0 or higher
 - npm or yarn
-- Web3 wallet (MetaMask)
+- Stellar wallet (Freighter, Ledger, etc.)
 - Supported sensor hardware
 
 ### Installation
@@ -47,10 +47,11 @@ npm start
 Create a `.env` file with the following variables:
 
 ```env
-# Blockchain Configuration
-BLOCKCHAIN_NETWORK=ethereum
-RPC_URL=https://mainnet.infura.io/v3/YOUR_PROJECT_ID
-PRIVATE_KEY=your_private_key_here
+# Stellar Configuration
+STELLAR_NETWORK=public
+HORIZON_URL=https://horizon.stellar.org
+SECRET_KEY=your_stellar_secret_key
+PUBLIC_KEY=your_stellar_public_key
 
 # Sensor Configuration
 SENSOR_API_KEY=your_sensor_api_key
@@ -108,11 +109,11 @@ const events = await proofvault.getEvents({
 ## 🔧 Technology Stack
 
 - **Backend**: Node.js, Express.js
-- **Blockchain**: Ethereum/Solidity
+- **Blockchain**: Stellar, Soroban Smart Contracts
 - **Database**: MongoDB (for caching)
 - **Frontend**: React.js
 - **IoT**: MQTT, WebSockets
-- **Security**: JWT, Web3.js
+- **Security**: JWT, Stellar SDK
 
 ## 🧪 Testing
 
@@ -158,8 +159,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- OpenZeppelin for secure smart contract templates
-- The Ethereum community for blockchain infrastructure
+- Stellar Development Foundation for blockchain infrastructure
+- Soroban for secure smart contract templates
+- The Stellar community for tools and support
 - All contributors who help improve this project
 
 ## 📞 Support

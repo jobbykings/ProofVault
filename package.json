@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint src/"
   },
-  "keywords": ["blockchain", "iot", "sensors", "decentralized", "ethereum", "smart-contracts"],
+  "keywords": ["blockchain", "iot", "sensors", "decentralized", "stellar", "soroban", "smart-contracts"],
   "author": "Proofvault Contributors",
   "license": "MIT",
   "repository": {
@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "web3": "^4.2.0",
+    "stellar-sdk": "^11.1.0",
+    "soroban-client": "^1.0.0",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
